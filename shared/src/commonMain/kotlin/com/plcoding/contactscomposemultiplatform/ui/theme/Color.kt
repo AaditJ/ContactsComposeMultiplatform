@@ -8,6 +8,11 @@ val OnGreenLight = Color(0xffffffff)
 val GreenContainerLight = Color(0xff6cff82)
 val OnGreenContainerLight = Color(0xff002106)
 
+// Finish rest later
+val BluePrimaryLight = Color(0xff475d92)
+val OnBlueLight = Color(0xff575e71)
+
+
 val GreenSecondaryLight = Color(0xff526350)
 val OnGreenSecondaryLight = OnGreenLight
 val GreenSecondaryContainerLight = Color(0xffd4e8d0)
