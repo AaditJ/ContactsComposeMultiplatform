@@ -27,7 +27,7 @@ import com.plcoding.contactscomposemultiplatform.contacts.presentation.uiModels.
 @Composable
 fun ContactListScreen(
     state: ContactListState,
-    mewContact: ContactUiModel?,
+    newContact: ContactUiModel?,
     onEvent: (ContactListEvent) -> Unit
 ) {
     Scaffold(

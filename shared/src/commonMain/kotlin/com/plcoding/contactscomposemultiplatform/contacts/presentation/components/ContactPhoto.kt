@@ -29,9 +29,10 @@ fun ContactPhoto(
 ) {
     val bitmap = rememberBitMapFromBytes(contact?.photoBytes)
     val photoModifier = modifier.clip(RoundedCornerShape(35))
-    if(contact?.photoBytes != null){
+
+    if(bitmap != null){
         Image(
-            bitmap = bitmap!!,
+            bitmap = bitmap,
             contentDescription = "Contact photo",
             modifier = photoModifier,
             contentScale = ContentScale.Crop
@@ -43,12 +44,12 @@ fun ContactPhoto(
             ),
             contentAlignment = Alignment.Center
         ){
-            Icon(
-                imageVector = Icons.Rounded.Person,
-                contentDescription = contact?.firstName,
-                modifier = Modifier.size(iconSize),
-                tint = MaterialTheme.colorScheme.onSecondaryContainer
-            )
+           Icon(
+               imageVector = Icons.Rounded.Person,
+               contentDescription = "Contact photo",
+               modifier = Modifier.size(iconSize),
+               tint = MaterialTheme.colorScheme.onSecondaryContainer
+           )
         }
     }
 }
